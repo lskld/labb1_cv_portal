@@ -1,0 +1,25 @@
+/* MAIN TOP NAVBAR */
+
+.main_navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.menu_list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    gap: 2em;
+    font-size: 1.5em;
+}
+
+.menu_list a {
+    text-decoration: none;
+}
+
+.menu_list #current {
+    font-weight: bold;
+}
+
+/* */
