@@ -1,4 +1,4 @@
-/* GLOBAL SETTINGS */
+/* ==== GLOBAL SETTINGS ==== */
 
 * {
     margin: 0;
@@ -47,6 +47,8 @@ body, html {
         justify-content: center;
     }
 }
+
+/* ==== HOME PAGE (index.html) === */
 
 /* HERO SECTION */
 
@@ -98,4 +100,9 @@ body, html {
         padding: 0.1em 1em 1em;
         margin: 3.5em 0;
     }
+/* ==== ABOUT PAGE ==== */
+
+.about_section {
+    display: flex;
+    flex-direction: column;
 }
