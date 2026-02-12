@@ -1,4 +1,4 @@
-/* GLOBAL SETTINGS */
+/* ==== GLOBAL SETTINGS ==== */
 
 * {
     margin: 0;
@@ -48,6 +48,8 @@ body, html {
     }
 }
 
+/* ==== HOME PAGE (index.html) === */
+
 /* HERO SECTION */
 
 #hero_section {
@@ -77,4 +79,11 @@ body, html {
         flex-direction: column;
         text-align: center;
     }
+}
+
+/* ==== ABOUT PAGE ==== */
+
+.about_section {
+    display: flex;
+    flex-direction: column;
 }
