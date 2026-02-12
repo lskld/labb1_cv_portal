@@ -100,9 +100,36 @@ body, html {
         padding: 0.1em 1em 1em;
         margin: 3.5em 0;
     }
+}
 /* ==== ABOUT PAGE ==== */
 
 .about_section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 1400px;
+    margin: 4em auto;
+    padding: 0 1.5rem;
+    gap: 20px;
+    row-gap: 100px;
+}
+
+.about_section p { font-size: 1.2em; }
+
+#about_page_header {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3em;
+}
+
+@media (max-width: 768px) {
+    .about_section{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about_section img {
+        max-width: 100%;
+        height: auto;
+    }
 }
