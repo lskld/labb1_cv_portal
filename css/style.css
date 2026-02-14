@@ -133,3 +133,41 @@ body, html {
         height: auto;
     }
 }
+
+/* ==== PROJECT PAGE ==== */
+
+#project_header {
+    text-align: center;
+    margin-top: 5em;
+}
+
+#project_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1400px;
+    gap: 30px;
+
+    margin: 4em auto;
+    padding: 0 1.5rem;
+    justify-content: center;
+}
+
+.projectcard {
+    background-color: beige;
+    width: 100%;
+    max-width: 600px;
+    padding: 1em;
+}
+
+.projectcard img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #project_section {
+        grid-template-columns: 1fr;
+    }
+}
+
