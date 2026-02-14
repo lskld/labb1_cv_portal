@@ -187,5 +187,10 @@ body, html {
     #project_section {
         grid-template-columns: 1fr;
     }
+
+    .modal_content {
+        width: 90%;
+        margin: 50% auto; 
+    }
 }
 
