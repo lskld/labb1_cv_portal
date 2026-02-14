@@ -7,24 +7,32 @@ var projectBtn1 = document.getElementById("card1_btn")
 var projectBtn2 = document.getElementById("card2_btn")
 var projectBtn3 = document.getElementById("card3_btn")
 
-projectBtn1.onclick = function () {
-    projectModal1.style.display = "block";
+if (projectBtn1 && projectModal1) {
+    projectBtn1.onclick = function () {
+        projectModal1.style.display = "block";
+    }
 }
 
-projectBtn2.onclick = function () {
-    projectModal2.style.display = "block";
+if (projectBtn2 && projectModal2) {
+    projectBtn2.onclick = function () {
+        projectModal2.style.display = "block";
+    }
 }
 
-projectBtn3.onclick = function () {
-    projectModal3.style.display = "block";
+if (projectBtn3 && projectModal3) {
+    projectBtn3.onclick = function () {
+        projectModal3.style.display = "block";
+    }
 }
 
 window.onclick = function(event) {
-  if (event.target == projectModal1 ||
-      event.target == projectModal2 ||
-      event.target == projectModal3) {
-    projectModal1.style.display = "none";
-    projectModal2.style.display = "none";
-    projectModal3.style.display = "none";
-  }
+    if (projectModal1 && event.target == projectModal1) {
+        projectModal1.style.display = "none";
+    }
+    if (projectModal2 && event.target == projectModal2) {
+        projectModal2.style.display = "none";
+    }
+    if (projectModal3 && event.target == projectModal3) {
+        projectModal3.style.display = "none";
+    }
 }
