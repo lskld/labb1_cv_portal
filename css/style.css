@@ -165,6 +165,11 @@ body, html {
     display: block;
 }
 
+.modal {
+    display: none;
+    background-color: beige;
+}
+
 @media (max-width: 768px) {
     #project_section {
         grid-template-columns: 1fr;
