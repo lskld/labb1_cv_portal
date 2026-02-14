@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-body, html {
+body, html, button {
     font-family: "Patrick Hand", cursive;
 }
 
@@ -153,15 +153,36 @@ body, html {
 }
 
 .projectcard {
-    background-color: beige;
+    background-color: #f0e6ff;
     width: 100%;
     max-width: 600px;
     padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    font-size: 1.15em;
+}
+
+.projectcard button {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+
+    font-size: 1.15em;
+    background-color: #751aff;
+    color: white;
+}
+
+.projectcard button:hover {
+    background-color: #330080;
+    cursor: pointer;
 }
 
 .projectcard img{
     width: 100%;
-    height: auto;
+    height: 250px;
     display: block;
 }
 
