@@ -118,18 +118,32 @@ body, html, button {
 }
 /* ==== ABOUT PAGE ==== */
 
-.about_section {
+#about_section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr;
+    
     max-width: 1400px;
     margin: 4em auto;
     padding: 0 1.5rem;
+    justify-content: center;
+
     gap: 20px;
-    row-gap: 100px;
 }
 
-.about_section p { font-size: 1.2em; }
+.about_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    padding: 1em;
+    background-color: #e8e8ff;
+}
+
+.about_content img { 
+    width: 100%;
+    height: auto;
+}
+.about_content p { font-size: 1.3em; }
 
 #about_page_header {
     text-align: center;
@@ -138,9 +152,8 @@ body, html, button {
 }
 
 @media (max-width: 768px) {
-    .about_section{
+    .about_content {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .about_section img {
