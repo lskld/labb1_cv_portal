@@ -35,6 +35,7 @@ body, html, button {
 
 .menu_list a {
     text-decoration: none;
+    color: #4b0187
 }
 
 .menu_list #current {
