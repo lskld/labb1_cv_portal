@@ -251,3 +251,15 @@ body, html, button {
     }
 }
 
+/* ==== HIDDEN CLICKABLE AREA ==== */
+
+.hidden_clickable_area {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+

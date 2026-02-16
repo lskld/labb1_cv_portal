@@ -36,3 +36,13 @@ window.onclick = function(event) {
         projectModal3.style.display = "none";
     }
 }
+
+/* ==== HIDDEN CLICKABLE AREA EASTER EGG==== */
+
+var hiddenAreas = document.getElementsByClassName("hidden_clickable_area");
+
+for (let i = 0; i < hiddenAreas.length; i++) {
+    hiddenAreas[i].onclick = function() { 
+        document.documentElement.style.backgroundColor = "#e6ffff"
+    }
+}
