@@ -240,6 +240,10 @@ body, html, button {
     width: 75%;
 }
 
+#easteregg_modal img {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     #project_section {
         grid-template-columns: 1fr;

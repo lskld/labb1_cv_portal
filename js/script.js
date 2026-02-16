@@ -1,3 +1,4 @@
+var eastereggModal = document.getElementById("easteregg_modal");
 var projectModal1 = document.getElementById("card1_modal");
 var projectModal2 = document.getElementById("card2_modal");
 var projectModal3 = document.getElementById("card3_modal");
@@ -35,6 +36,9 @@ window.onclick = function(event) {
     if (projectModal3 && event.target == projectModal3) {
         projectModal3.style.display = "none";
     }
+    if (eastereggModal && event.target == eastereggModal) {
+        eastereggModal.style.display = "none";
+    }
 }
 
 /* ==== HIDDEN CLICKABLE AREA EASTER EGG==== */
@@ -56,7 +60,7 @@ document.addEventListener('keydown', function(event) {
     keypresses += event.key;
 
     if(keypresses === secretCombination){
-        document.documentElement.style.backgroundColor = "#e6ffff"
+        eastereggModal.style.display = "block";
         keypresses = "";
     }
 
