@@ -46,3 +46,21 @@ for (let i = 0; i < hiddenAreas.length; i++) {
         document.documentElement.style.backgroundColor = "#e6ffff"
     }
 }
+
+/* ==== HIDDEN KEYBOARD COMBINATION EASTER EGG ==== */
+
+const secretCombination = "hello";
+let keypresses = "";
+
+document.addEventListener('keydown', function(event) {
+    keypresses += event.key;
+
+    if(keypresses === secretCombination){
+        document.documentElement.style.backgroundColor = "#e6ffff"
+        keypresses = "";
+    }
+
+    if(keypresses.length >= 5) {
+        keypresses = "";
+    }
+});
