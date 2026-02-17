@@ -109,7 +109,8 @@ body, html, button {
     border-radius: 2%;
 }
 
-.cv_section p, h3 { font-size: 1.2em; }
+.cv_section p { font-size: 1.2em; }
+.cv_section h3 { font-size: 1.2em }
 .cv_section h2 { font-size: 1.7em;}
 .cv_section h1 { text-align: center; }
 
