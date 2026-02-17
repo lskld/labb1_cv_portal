@@ -1,1 +1,2 @@
-# labb1_cv_portal
+# Labb 1 | CV Portal 📃
+### For Frontend & UX Course @ Chas Academy
