@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-.patrick-hand-regular {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 body, html, button {
     font-family: "Patrick Hand", cursive;
 }
@@ -38,6 +32,12 @@ body, html, button {
     color: #4b0187
 }
 
+.menu_list a:hover {
+    background-color:#f0e6ff;
+    border-radius: 30%;
+    opacity: 70%;
+}
+
 .menu_list #current {
     font-weight: bold;
 }
@@ -59,7 +59,7 @@ body, html, button {
     gap: 2.5em;
 
     max-width: 1100px;
-    margin: 10em auto;
+    margin: 10% auto;
     padding: 0 1.5rem;
 }
 
@@ -84,6 +84,11 @@ body, html, button {
 #socialmedia_section img{
     height: 80px;
     width: auto;
+}
+
+#socialmedia_section img:hover {
+    height: 85px;
+    opacity: 80%;
 }
 
 @media (max-width: 768px) {
@@ -160,7 +165,7 @@ body, html, button {
         grid-template-columns: 1fr;
     }
 
-    .about_section img {
+    #about_section img {
         max-width: 100%;
         height: auto;
     }
@@ -215,14 +220,15 @@ body, html, button {
 
 .projectcard img{
     width: 100%;
-    height: 250px;
+    height: auto;
     display: block;
 }
 
 .modal {
     display: none; 
     position: fixed; 
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%; 
     height: 100%; 
     background-color: rgba(0,0,0,0.4); 
