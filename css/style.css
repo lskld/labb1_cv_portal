@@ -243,6 +243,10 @@ body, html, button {
   width: 50%; 
 }
 
+.modal_content p {
+    font-size: 1.2rem;
+}
+
 .modal_content img {
     width: 75%;
 }
